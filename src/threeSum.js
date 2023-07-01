@@ -1,4 +1,4 @@
-export var threeSum = function(nums) {
+ var threeSum = function(nums) {
     let map = {};
     let solutions = [];
     for(let i = 0; i < nums.length; i++){
@@ -27,3 +27,5 @@ export var threeSum = function(nums) {
     })
     return finalSolutions;
 };
+
+console.log(threeSum([1,2,3,-1,-2,-3,0]))

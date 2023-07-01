@@ -12,5 +12,16 @@ describe('threeSum', () => {
     it('returns [0,0,0] when passed: [0,0,0]', () => {
         const result = (threeSum([0,0,0]));
         expect(result).toEqual([0,0,0]);
+    })
+    it('returns [[-3,0,3],[-1,-2,3],[-3,1,2],[-2,0,2],[-1,0,1]] when passed: [1,2,3,-1,-2,-3,0]', () => {
+        const result = (threeSum([1,2,3,-1,-2,-3,0]));
+        expect(result).toEqual([
+            [ -3, 1, 2 ],
+            [ -2, -1, 3 ],
+            [ -1, 0, 1 ],
+            [ -2, 0, 2 ],
+            [ -3, 0, 3 ]
+          ]);
     }) 
+
 })
