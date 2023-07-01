@@ -1,24 +1,24 @@
-import { longestSubstring } from "../src/longestSubstring.js"
+import { longestPalindrome } from "../src/longestSubstring.js"
 
-describe('longestSubstring', () => {
+describe('longestPalindrome', () => {
     it('returns aba when passed: "ababd', () => {
-        const result = longestSubstring("ababd")
+        const result = longestPalindrome("ababd")
         expect(result).toEqual("aba")
     })
     it('returns aba when passed: "abbabd', () => {
-        const result = longestSubstring("abbabd")
+        const result = longestPalindrome("abbabd")
         expect(result).toEqual("abba")
     })
     it('returns a when passed: a', () => {
-        const result = longestSubstring("a")
+        const result = longestPalindrome("a")
         expect(result).toEqual("a")
     })
     it('returns aa when passed: aa', () => {
-        const result = longestSubstring("aa")
+        const result = longestPalindrome("aa")
         expect(result).toEqual("aa")
     })
     it('returns nothing when passed: ""', () => {
-        const result = longestSubstring("")
+        const result = longestPalindrome("")
         expect(result).toEqual("")
     })
 })
